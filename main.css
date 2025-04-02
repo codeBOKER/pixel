@@ -2549,7 +2549,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .hero-img {
-  width: 400px;
+  width: 420px;
   position: absolute;
   bottom: 0;
   left: 5%;
@@ -2559,6 +2559,7 @@ textarea.w-input, textarea.w-select {
   color: var(--main);
   font-size: 50px;
   line-height: 50px;
+  margin-top: 0px;
 }
 
 .hero-text-container {
@@ -2569,6 +2570,7 @@ textarea.w-input, textarea.w-select {
   height: 100%;
   margin-right: 0;
   display: flex;
+  padding-bottom: 60px;
 }
 
 .service-slogen {
@@ -2576,9 +2578,48 @@ textarea.w-input, textarea.w-select {
   font-size: 30px;
 }
 
+.service-words-container {
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
 .service-words {
   color: var(--white-site);
-  margin-top: 10px;
+  margin-top: 0px;
+  align-self: center;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+@keyframes elementor-headline-slide-in {
+  0% {
+    opacity:0;
+    transform:translateX(-100%)
+  }
+  60% {
+    opacity:1;
+    transform:translateX(10%)
+  }
+  to {
+    opacity:1;
+    transform:translateX(0)
+  }
+}
+@keyframes elementor-headline-slide-out {
+  0% {
+    opacity:1;
+    transform:translateX(0)
+  }
+  60% {
+    opacity:0;
+    transform:translateX(110%)
+  }
+  to {
+    opacity:0;
+    transform:translateX(100%)
+  }
 }
 
 .slogen {
@@ -2593,7 +2634,7 @@ textarea.w-input, textarea.w-select {
 
 .slogen-container {
   position: relative;
-  top: 13%;
+  top: 20%;
 }
 
 .white-pixel-img {
@@ -2795,14 +2836,22 @@ textarea.w-input, textarea.w-select {
   }
 
   .grating-word {
+    margin-top: 15px;
     font-size: 40px;
   }
 
   .service-slogen {
     font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .service-words-container {
+    padding-bottom: 25px;
   }
 
   .service-words {
+    margin: 0px;
     font-size: 28px;
   }
 
@@ -2811,7 +2860,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .slogen-container {
-    top: 7%;
+    top: 12%;
   }
   .w-container {
     max-width: 728px;
@@ -3222,12 +3271,19 @@ textarea.w-input, textarea.w-select {
   }
 
   .service-slogen {
+    padding-top: 10px;
+    margin-top: 0px;
     font-size: 20px;
     line-height: 20px;
   }
-
+  
+  .service-words-container {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
   .service-words {
-    font-size: 25px;
+    margin: 0px;
+    font-size: 22px;
     line-height: 20px;
   }
 
@@ -3658,19 +3714,24 @@ textarea.w-input, textarea.w-select {
     line-height: 20px;
   }
 
-  .service-words {
-    margin-top: 30px;
-    font-size: 40px;
-    line-height: 40px;
+  .service-words-container{
+    padding-top: 5px;
+    padding-bottom: 25px;
   }
 
-  .slogen {
+  .service-words {
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
   }
 
+  .slogen {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
   .slogen-container {
-    top: 3%;
+    top: 8%;
   }
 
   .white-pixel-img {

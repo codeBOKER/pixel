@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     adjustScrollSpeed();
     window.addEventListener('resize', adjustScrollSpeed);
+
+    // Initialize tag rotation
+    initTagRotation();
 });
 
 // Show More/Less functionality
@@ -53,14 +56,14 @@ function showLess() {
 function toggleMobileMenu() {
     const navMenu = document.querySelector('.w-nav-menu');
     const menuButton = document.querySelector('.menu-button');
-    
+
     if (navMenu.style.display === 'flex') {
         navMenu.style.display = 'none';
         menuButton.classList.remove('w--open');
     } else {
         navMenu.style.display = 'flex';
         menuButton.classList.add('w--open');
-        
+
         // Position the menu below navbar
         navMenu.style.position = 'absolute';
         navMenu.style.top = '100%';
@@ -73,4 +76,46 @@ function toggleMobileMenu() {
         navMenu.style.padding = '10px 0';
         navMenu.style.zIndex = '1000';
     }
+}
+
+// Tag rotation functionality
+function initTagRotation() {
+    const serviceTags = document.querySelectorAll('.service-words');
+    if (serviceTags.length === 0) return;
+
+    // Hide all tags except the first one
+    let currentTagIndex = 0;
+    serviceTags.forEach((tag, index) => {
+        if (index === 0) {
+            tag.style.display = 'block';
+            tag.style.animation = 'elementor-headline-slide-in 1s';
+        } else {
+            tag.style.display = 'none';
+        }
+    });
+
+    // Function to rotate to the next tag
+    function rotateToNextTag() {
+        // Get current and next tag
+        const currentTag = serviceTags[currentTagIndex];
+        const nextIndex = (currentTagIndex + 1) % serviceTags.length;
+        const nextTag = serviceTags[nextIndex];
+
+        // Start slide-out animation for current tag
+        currentTag.style.animation = 'elementor-headline-slide-out 1s';
+        
+        // Show and animate next tag
+        nextTag.style.display = 'block';
+        nextTag.style.animation = 'elementor-headline-slide-in 1s';
+
+        // After animation completes, hide the current tag
+        setTimeout(() => {
+            currentTag.style.display = 'none';
+            // Update current index
+            currentTagIndex = nextIndex;
+        }, 1000); // Wait for 1s (animation duration)
+    }
+
+    // Set interval to rotate tags every 3 seconds
+    setInterval(rotateToNextTag, 3000);
 }
