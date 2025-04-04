@@ -2094,6 +2094,27 @@ textarea.w-input, textarea.w-select {
   place-items: center;
 }
 
+@keyframes slideUpIn {
+  from {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.service-grid-card {
+  opacity: 0;
+  transform: translateY(100px);
+  will-change: transform, opacity;
+}
+
+.service-grid-card.animate {
+  animation: slideUpIn 0.5s ease forwards;
+}
+
 .service-line-shape {
   background-color: var(--main);
   width: 95%;
@@ -2418,6 +2439,21 @@ textarea.w-input, textarea.w-select {
 .whatsup-img {
   order: -1;
   width: 50px;
+  animation: wiggle 1s ease-in-out;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(25deg); }
+  20% { transform: rotate(-20deg); }
+  30% { transform: rotate(15deg); }
+  40% { transform: rotate(-10deg); }
+  50% { transform: rotate(5deg); }
+  60% { transform: rotate(-5deg); }
+  70% { transform: rotate(2deg); }
+  80% { transform: rotate(-2deg); }
+  90% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .contact-number {
@@ -2543,7 +2579,23 @@ textarea.w-input, textarea.w-select {
   height: 20px;
   display: flex;
 }
+.animate-from-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease-out;
+}
 
+.animate-from-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease-out;
+}
+
+.animate-from-left.visible,
+.animate-from-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
 .numbers-container {
   order: -1;
 }
