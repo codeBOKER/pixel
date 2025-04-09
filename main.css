@@ -2434,6 +2434,7 @@ textarea.w-input, textarea.w-select {
   align-items: center;
   margin-right: 0;
   display: flex;
+  text-decoration: none;
 }
 
 .whatsup-img {
@@ -2558,8 +2559,8 @@ textarea.w-input, textarea.w-select {
   background-image: url("https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/67d3613815744f1d9287b7b3_e0ef6d6e657f4e91f524d8f82315669c_2.png");
   background-position: 0 0;
   background-size: auto;
-  width: 20px;
-  margin-right: 5px;
+  width: 40px;
+  margin-right: 10px;
 }
 
 .socialmedia-img:hover {
@@ -2567,16 +2568,16 @@ textarea.w-input, textarea.w-select {
 }
 
 .socialmedia-img.x-logo {
-  width: 15px;
+  width: 30px;
   margin-right: 0;
 }
 
 .socialmedia-img.x-container {
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
   border-radius: 40px;
   justify-content: center;
   align-items: center;
-  height: 20px;
+  height: 40px;
   display: flex;
 }
 .animate-from-left {
@@ -2913,6 +2914,20 @@ textarea.w-input, textarea.w-select {
 
   .slogen-container {
     top: 12%;
+  }
+  
+  .socialmedia-img {
+    width: 32px;
+    margin-right: 6px;
+  }
+
+  .socialmedia-img.x-container {
+    height: 32px;
+    border-width:1px;
+  }
+
+  .socialmedia-img.x-logo {
+    width: 22px;
   }
   .w-container {
     max-width: 728px;
@@ -3298,10 +3313,14 @@ textarea.w-input, textarea.w-select {
     font-size: 20px;
     line-height: 26px;
   }
+  .socialmedia-logos {
+    margin-right: 4px;
+  }
 
   .socialmedia-img {
-    width: 15px;
+    width: 20px;
     margin-top: 7px;
+    margin-right: 3px;
   }
 
   .socialmedia-img.x-logo {
@@ -3310,7 +3329,8 @@ textarea.w-input, textarea.w-select {
   }
 
   .socialmedia-img.x-container {
-    height: 15px;
+    border: 1.5px solid var(--white);
+    height: 20px;
   }
 
   .hero-img {
@@ -3679,6 +3699,19 @@ textarea.w-input, textarea.w-select {
     margin-right: auto;
   }
 
+  .socialmedia-img {
+    width: 22px;
+    margin-right: 5px;
+    margin-top: 0px;
+  }
+
+  .socialmedia-img.x-container {
+    height: 22px;
+  }
+
+  .socialmedia-img.x-logo {
+    width: 15px;
+  }
   .footer-grid {
     grid-column-gap: 7px;
     grid-row-gap: 7px;
