@@ -3324,13 +3324,13 @@ textarea.w-input, textarea.w-select {
   }
 
   .hero-buttons-container {
-    top: 4%;
+    top: 5%;
   }
 
   .hero-button {
     padding: 5px;
     padding-top: 7px;
-    width: 50px;
+    width: 70px;
     font-size: 12px;
   }
   .outline-button {
@@ -3370,6 +3370,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .slogen-container {
+    top: 20%;
     flex-flow: column;
     justify-content: center;
     align-items: center;
@@ -3709,6 +3710,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .button {
+    width: 150px;
     height: 30px;
     --tooltip-height: 30px;
 
@@ -4006,6 +4008,20 @@ textarea.w-input, textarea.w-select {
     padding-top: 30px;
   }
 
+  .hero-buttons-container {
+    top: 5%;
+  }
+
+  .hero-button {
+    padding: 7px;
+    padding-top: 12px;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .outline-button {
+    padding: 10px;
+  }
   .service-slogen {
     font-size: 20px;
     line-height: 20px;
