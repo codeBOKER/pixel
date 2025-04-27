@@ -1,16 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const container = document.querySelector('.images-container');
-    if (container) {
-        // Clone all items
-        const items = container.innerHTML;
-        container.innerHTML = items + items;
-    }
-
     // Optional: Adjust animation speed based on screen width
     function adjustScrollSpeed() {
         const container = document.querySelector('.images-container');
         if (container) {
-            const speed = window.innerWidth < 768 ? '10s' : '20s';
+            const speed = window.innerWidth < 768 ? '20s' : '30s';
             container.style.animationDuration = speed;
         }
     }
@@ -44,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 cards.forEach(card => {
                     card.classList.remove('animate');
                 });
-                
+
                 // Trigger animation
                 animateServiceCards();
-                
+
                 // Don't unobserve - let it trigger every time
                 // serviceObserver.unobserve(entry.target); // Remove this line
             } else {
@@ -58,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         });
-    }, { 
+    }, {
         threshold: 0.1,
         // Add root margin to trigger slightly before the section comes into view
         rootMargin: '50px'
@@ -81,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 img.style.animation = 'wiggle 1s ease-in-out';
             }
         });
-    }, { 
+    }, {
         threshold: 0.5,
         rootMargin: '50px'
     });
@@ -120,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             // Removed the else block that was resetting numbers to 0
         });
-    }, { 
+    }, {
         threshold: 0.1,
         rootMargin: '50px'
     });
@@ -135,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Show More/Less functionality
 function showMore() {
     document.querySelector('.service-grid.hide')?.classList.remove('hide');
-    
+
     // Get all hidden cards
     const hiddenCards = document.querySelectorAll('.service-grid-card.hide');
     hiddenCards.forEach((card, index) => {
@@ -216,7 +209,7 @@ function initTagRotation() {
 
         // Start slide-out animation for current tag
         currentTag.style.animation = 'elementor-headline-slide-out 1s';
-        
+
         // Show and animate next tag
         nextTag.style.display = 'block';
         nextTag.style.animation = 'elementor-headline-slide-in 1s';
@@ -238,10 +231,10 @@ function animateServiceCards() {
     cards.forEach((card, index) => {
         // Reset the animation by removing the class
         card.classList.remove('animate');
-        
+
         // Force a reflow to ensure the animation triggers again
         void card.offsetWidth;
-        
+
         // Add the animation with delay
         setTimeout(() => {
             card.classList.add('animate');
@@ -249,14 +242,16 @@ function animateServiceCards() {
     });
 }
 
+
+
 function animateNumber(element, targetNumber) {
     // Check if animation has already played
     if (element.hasAnimated) return;
-    
+
     // Remove the '+' symbol temporarily
     const originalText = element.textContent;
     const hasPlus = originalText.includes('+');
-    
+
     let startNumber = 0;
     const duration = 2000; // 2 seconds
     const steps = 60; // Smooth animation with 60 steps
@@ -271,14 +266,14 @@ function animateNumber(element, targetNumber) {
     element.countInterval = setInterval(() => {
         currentStep++;
         let currentNumber = Math.floor(increment * currentStep);
-        
+
         if (currentStep >= steps) {
             currentNumber = targetNumber;
             clearInterval(element.countInterval);
             // Mark animation as completed
             element.hasAnimated = true;
         }
-        
+
         // Add back the '+' if it existed in the original
         element.textContent = hasPlus ? `+${currentNumber}` : currentNumber;
     }, duration / steps);
