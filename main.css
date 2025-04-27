@@ -1488,7 +1488,7 @@ textarea.w-input, textarea.w-select {
 
 .service-company-contairner {
   background-color: var(--white-site);
-  border-radius: 20px;
+  border-radius: 18px;
   width: 200px;
   height: 200px;
   margin-left: 15px;
@@ -2195,7 +2195,7 @@ textarea.w-input, textarea.w-select {
 .service-circal-shap {
   background-color: var(--b);
   color: #e4e4e400;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 15px;
   height: 15px;
   margin-top: 0;
@@ -2897,6 +2897,7 @@ textarea.w-input, textarea.w-select {
     width: 12px;
     height: 12px;
     bottom: -6px;
+    border-radius: 2px;
   }
 
   .service-desc {
@@ -2923,6 +2924,7 @@ textarea.w-input, textarea.w-select {
   .service-company-contairner {
     width: 150px;
     height: 150px;
+    border-radius: 16px;
   }
 
   .section {
@@ -3323,6 +3325,7 @@ textarea.w-input, textarea.w-select {
     padding-top: 7px;
     width: 70px;
     font-size: 12px;
+    border-radius: 5px;
   }
   .outline-button {
     padding: 5px;
@@ -3427,6 +3430,7 @@ textarea.w-input, textarea.w-select {
   .service-company-contairner {
     width: 100px;
     height: 100px;
+    border-radius: 14px;
   }
 
   .section {
@@ -3772,7 +3776,7 @@ textarea.w-input, textarea.w-select {
     display: block;
     width: 100px;
     align-self: center;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: var(--main);
     color: var(--white-site);
   }
