@@ -2192,22 +2192,22 @@ textarea.w-input, textarea.w-select {
   position: relative;
 }
 
-.service-circal-shap {
+.service-pixel-shap {
   background-color: var(--b);
   color: #e4e4e400;
   border-radius: 3px;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 20px;
   position: absolute;
-  bottom: -7px;
-  right: -8%;
+  bottom: -6px;
+  right: -6%;
 }
 
-.service-circal-shap.leftside {
-  left: -8px;
+.service-pixel-shap.leftside {
+  left: -6px;
   right: auto;
 }
 
@@ -2893,10 +2893,10 @@ textarea.w-input, textarea.w-select {
     grid-template-columns: auto;
   }
 
-  .service-circal-shap {
-    width: 12px;
-    height: 12px;
-    bottom: -6px;
+  .service-pixel-shap {
+    width: 10px;
+    height: 10px;
+    bottom: -5px;
     border-radius: 2px;
   }
 
@@ -3399,9 +3399,9 @@ textarea.w-input, textarea.w-select {
   }
 
 
-  .service-circal-shap {
-    width: 10px;
-    height: 10px;
+  .service-pixel-shap {
+    width: 9px;
+    height: 9px;
     bottom: -5px;
   }
 
