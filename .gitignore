@@ -121,3 +121,38 @@ public
 
 # Local development files
 *.local
+
+# Large media files
+*.psd
+*.ai
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.flv
+*.mkv
+*.webm
+*.mpeg
+*.mpg
+*.m4v
+*.3gp
+*.gif
+*.tiff
+*.raw
+*.xcf
+
+# Large compressed files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.dmg
+*.iso
+
+# Database files
+*.sql
+*.sqlite
+*.db
+
+# Log files
+*.log.*
