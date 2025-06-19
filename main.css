@@ -2849,11 +2849,11 @@ textarea.w-input, textarea.w-select {
 }
 @media screen and (max-width: 1440px) {
   .hero-img {
-    width: 120%;
-    max-width: 120%;
+    width: 50%;
+    max-width: 100%;
     position: absolute;
-    bottom: 8%;
-    left: -13%;
+    bottom: 17%;
+    left: 3%;
   }
 }
 
@@ -3054,6 +3054,12 @@ textarea.w-input, textarea.w-select {
     font-size: 15px;
   }
 
+  .hero-img {
+      width: 51%;
+      bottom: 20%;
+      left: 4%;
+  }
+  
   .hero-buttons-container {
     top: 10%;
   }
@@ -3338,7 +3344,9 @@ textarea.w-input, textarea.w-select {
   }
 
   .hero-img {
-    width: 250px;
+    width: 40%;
+    bottom: 15%;
+    left: 7%;
   }
 
   .grating-word {
@@ -3988,10 +3996,9 @@ textarea.w-input, textarea.w-select {
   }
 
   .hero-img {
-    width: 230%;
-    max-width: 230%;
-    left: -31%;
-    bottom: -8%;
+    width: 94%;
+    left: 4%;
+    bottom: 0%;
   }
 
   .grating-word {
