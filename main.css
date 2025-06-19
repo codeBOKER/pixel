@@ -2242,6 +2242,7 @@ textarea.w-input, textarea.w-select {
   height: 2.5em;
   padding-right: 3.3em;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .cssbuttons-io-button .icon {
