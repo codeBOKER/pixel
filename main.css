@@ -2751,12 +2751,13 @@ textarea.w-input, textarea.w-select {
 }
 
 .hero-img {
-  width: 115%;
-  max-width: 115%;
+  width: 50%;
+  max-width: 100%;
   position: absolute;
-  bottom: -5%;
-  left: -10%;
+  bottom: 10%;
+  left: 5%;
 }
+
 
 .grating-word {
   color: var(--white-site);
