@@ -6,6 +6,7 @@ desktop.ini
 
 # personal files
 map.txt
+clean_react_attrs.py
 
 # Editor directories and files
 .idea/

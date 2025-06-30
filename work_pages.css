@@ -394,10 +394,14 @@ video {
 body {
     --tw-bg-opacity: 1;
     background-color: rgb(46 45 43 / var(--tw-bg-opacity, 1));
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-family: 'Alfont Com Theyearofhandicrafts', Arial, sans-serif;
     color: hsl(var(--foreground))
 }
 
+/* Override all text elements to use consistent font */
+h1, h2, h3, h4, h5, h6, p, span, a, div, button {
+    font-family: 'Alfont Com Theyearofhandicrafts', Arial, sans-serif;
+}
 .glass-effect {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -930,10 +934,6 @@ body {
 
 .h-\[1px\] {
     height: 1px
-}
-
-.h-\[var\(--radix-navigation-menu-viewport-height\)\] {
-    height: var(--radix-navigation-menu-viewport-height)
 }
 
 .h-\[var\(--radix-select-trigger-height\)\] {
@@ -3748,10 +3748,6 @@ body {
 
     .md\:hidden {
         display: none
-    }
-
-    .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
-        width: var(--radix-navigation-menu-viewport-width)
     }
 
     .md\:w-auto {
