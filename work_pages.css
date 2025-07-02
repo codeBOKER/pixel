@@ -4333,3 +4333,12 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button {
 [data-side=right] .\[\[data-side\=right\]_\&\]\:cursor-e-resize {
     cursor: e-resize
 }
+/* Fix for hero section appearing above navbar */
+.navbar {
+  z-index: 1000 !important;
+  position: sticky;
+}
+
+section.relative {
+  z-index: 1;
+}

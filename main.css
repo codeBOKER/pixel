@@ -2780,6 +2780,7 @@ textarea.w-input, textarea.w-select {
 .service-slogen {
   color: var(--b);
   font-size: 30px;
+  padding-bottom: 25px;
 }
 
 .service-words-container {
@@ -3077,7 +3078,7 @@ textarea.w-input, textarea.w-select {
   .service-slogen {
     font-size: 20px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
     line-height: 15px;
   }
 
@@ -3358,6 +3359,7 @@ textarea.w-input, textarea.w-select {
 
   .service-slogen {
     padding-top: 10px;
+    padding-bottom: 15px;
     margin-top: 0px;
     font-size: 20px;
     line-height: 20px;
