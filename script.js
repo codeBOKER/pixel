@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Define the partner logo URLs once for reuse
+    const logoUrls = [
+        'https://imgur.com/8OmicuT.png',
+        'https://imgur.com/R5MFW4W.png',
+        'https://imgur.com/ZX7UwtH.png',
+        'https://imgur.com/TFfgwgx.png',
+        'https://imgur.com/RYd8r1w.png',
+        'https://imgur.com/zJG3jI0.png'
+    ];
+    
+    // Initialize partner logos
+    initPartnerLogos(logoUrls);
     // Optional: Adjust animation speed based on screen width
     function adjustScrollSpeed() {
         const container = document.querySelector('.images-container');
@@ -277,4 +289,30 @@ function animateNumber(element, targetNumber) {
         // Add back the '+' if it existed in the original
         element.textContent = hasPlus ? `+${currentNumber}` : currentNumber;
     }, duration / steps);
+}
+
+// Function to initialize partner logos dynamically
+function initPartnerLogos(logoUrls) {
+    // Get the container
+    const container = document.querySelector('.images-container');
+    if (!container) return;
+    
+    // Clear existing content
+    container.innerHTML = '';
+    
+    // Create 3 sets of logos (for continuous scrolling effect)
+    for (let i = 0; i < 3; i++) {
+        logoUrls.forEach(url => {
+            const logoContainer = document.createElement('div');
+            logoContainer.className = 'service-company-contairner';
+            
+            const img = document.createElement('img');
+            img.src = url;
+            img.alt = '';
+            img.className = 'srvice-company-image';
+            
+            logoContainer.appendChild(img);
+            container.appendChild(logoContainer);
+        });
+    }
 }
