@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap");
+/* Removed Google Fonts import */
       *,
       ::before,
       ::after {
@@ -142,12 +142,13 @@
         -moz-tab-size: 4; /* 3 */
         -o-tab-size: 4;
         tab-size: 4; /* 3 */
-        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        font-family: 'Alfont Com Theyearofhandicrafts',
           "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
         font-feature-settings: normal; /* 5 */
         font-variation-settings: normal; /* 6 */
         -webkit-tap-highlight-color: transparent; /* 7 */
       }
+
       /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
@@ -209,7 +210,7 @@ Add the correct font weight in Edge and Safari.
       kbd,
       samp,
       pre {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        font-family: 'Alfont Com Theyearofhandicrafts',
           "Liberation Mono", "Courier New", monospace; /* 1 */
         font-feature-settings: normal; /* 2 */
         font-variation-settings: normal; /* 3 */
@@ -987,9 +988,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
       }
       body {
         margin: 0;
-        font-family: "Cairo", -apple-system, BlinkMacSystemFont, "Segoe UI",
-          "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-          "Helvetica Neue", sans-serif;
+        font-family: 'Alfont Com Theyearofhandicrafts';
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         direction: rtl;
@@ -1406,3 +1405,136 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           line-height: 1;
         }
       }
+@font-face {
+  font-family: 'Pizzadudedotdk';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/6642e6d9571fb32831302581_pizzadudedotdk.txt') format('undefined');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fffforwa';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/664321003ab27b262457459a_FFFFORWA.TTF') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Pixeloidmono D 94 Ev';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/664322ed7b0e908ee5e25abd_PixeloidMono-d94EV.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Quinquefive Alorm';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/664326d57f2f9a59dd874e67_Quinquefive-ALoRM.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: optional;
+}
+@font-face {
+  font-family: 'Beautifulpoliceofficer Rvv 8 X';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66432703cd844785e65f356c_BeautifulPoliceOfficer-rvv8x.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: optional;
+}
+@font-face {
+  font-family: 'Speedpixel R 99 B 6';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/6643282e472e9b4cf1c87ea0_SpeedPixel-R99B6.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: optional;
+}
+@font-face {
+  font-family: '1 Jjeb';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66432842ae18f5139dc4aa08_SpeedPixelItalic-1jjeB.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: optional;
+}
+@font-face {
+  font-family: 'Qatar 2022 Arabic';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66890b0490f89437c7f2ae92_Qatar2022Arabic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arbfonts Ibmplexarabic';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66890b021b3a6c3f7fc7dc7d_ArbFONTS-IBMPlexArabic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arbfonts Ibmplexarabic 2';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66890b02c0bff26f3845ae3b_ArbFONTS-IBMPlexArabic-Bold%20(2).ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arbfonts Ibmplexarabic Text';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66890b02c2c9b8f3d527c014_ArbFONTS-IBMPlexArabic-Text.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '1 Y 1 E';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/6642e18b9bda8a518f99ea54_MinecraftBoldItalic-1y1e.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Bmg 3';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/6642e18bffcf507fcf80a76b_MinecraftRegular-Bmg3.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nmk 1';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/6642e18b0fc0d4c4d7bc7b41_MinecraftBold-nMK1.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arbfonts T 2215';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66890b0306a1f7937bf313e7_ArbFONTS-t2215.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arbfonts T 2216';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66890b03fccc868fed795ec0_ArbFONTS-t2216.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ghaithsans';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66c7a08dae1af505f91d634e_GHAITHSANS-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ghaithsans';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/66c7a32aa8b68c35b4f0da03_GHAITHSANS-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alfont Com Theyearofhandicrafts';
+  src: url('https://cdn.prod.website-files.com/65e5ed2103a1b7d936933a1b/67d250e81382e5afba020fdd_alfont_com_TheYearofHandicrafts-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
