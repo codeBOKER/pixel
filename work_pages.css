@@ -847,10 +847,12 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button {
     aspect-ratio: 16/9
 }
 
-.aspect-\[4\/3\] {
-    aspect-ratio: 4/3
+.aspect-\[3\/3\] {
+    aspect-ratio: 3/3
 }
-
+.aspect-\[4\/5\] {
+    aspect-ratio: 4/5
+}
 .aspect-square {
     aspect-ratio: 1 / 1
 }

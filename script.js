@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'https://imgur.com/8OmicuT.png',
         'https://imgur.com/R5MFW4W.png',
         'https://imgur.com/ZX7UwtH.png',
-        'https://imgur.com/TFfgwgx.png',
+        'https://imgur.com/M54Iwie.png',
         'https://imgur.com/RYd8r1w.png',
         'https://imgur.com/zJG3jI0.png'
     ];
