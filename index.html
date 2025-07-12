@@ -439,6 +439,8 @@
           <!-- Form div moved to first position -->
           <div class="form-block w-form">
             <form
+              action="https://formspree.io/f/mrbknngd"
+              method="POST"
               id="email-form"
               name="email-form"
               data-name="Email Form"
@@ -474,23 +476,21 @@
                 placeholder="الرسالــــــة"
                 maxlength="5000"
                 id="field"
-                name="field"
+                name="message"
                 data-name="Field"
                 class="message-field w-input"
               ></textarea>
-              <input
+              <div class="w-form-message" >
+                <div class="w-form-done" style="color: #159032;">شكرا لك على اهتمامك, لقد تم ارسال رسالتك</div>
+                <div class="w-form-fail" style="color:rgb(178, 43, 70);">حدث خطاء ماء ..!</div>
+              </div>
+              <button
                 type="submit"
                 data-wait="Please wait..."
                 class="submit-button w-button"
-                value="ارســــــــال"
-              />
+              >ارســــــــال</button>
             </form>
-            <div class="w-form-done">
-              <div>شكرا لك, لقد تم ارسال رسالتك</div>
-            </div>
-            <div class="w-form-fail">
-              <div>حدث خطاء ماء</div>
-            </div>
+            
           </div>
           <!-- Contact info div moved to second position -->
           <div

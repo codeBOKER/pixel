@@ -522,19 +522,19 @@ button, [type="button"], [type="reset"] {
 }
 
 .w-form-done {
-  text-align: center;
-  background-color: #ddd;
-  padding: 20px;
   display: none;
 }
 
 .w-form-fail {
-  background-color: #ffdede;
-  margin-top: 10px;
-  padding: 10px;
   display: none;
 }
-
+.w-form-message {
+  background-color: transparent;
+  text-align: right;
+  font-size: medium;
+  height: 15px;
+  width: 100%;
+}
 label {
   margin-bottom: 5px;
   font-weight: bold;
@@ -3589,6 +3589,10 @@ textarea.w-input, textarea.w-select {
     border: 1.5px solid var(--white);
     height: 20px;
   }
+  .w-form-message {
+    font-size: small;
+    height: 10px;
+}
 
 
 }

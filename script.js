@@ -1,4 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle Formspree AJAX submission to prevent redirect
+    const form = document.getElementById('email-form');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Reset form fields
+                    form.reset();
+                    // Show success message
+                    const done = form.parentElement.querySelector('.w-form-done');
+                    if (done) {
+                        done.style.display = 'block';
+                        setTimeout(() => { done.style.display = 'none'; }, 4000);
+                    }
+                } else {
+                    return response.json().then(data => {
+                        throw new Error(data.error || 'حدث خطأ ما');
+                    });
+                }
+            })
+            .catch(() => {
+                // Show error message
+                const fail = form.parentElement.querySelector('.w-form-fail');
+                if (fail) {
+                    fail.style.display = 'block';
+                    setTimeout(() => { fail.style.display = 'none'; }, 4000);
+                }
+            });
+        });
+    }
     // Define the partner logo URLs once for reuse
     const logoUrls = [
         'https://imgur.com/8OmicuT.png',
