@@ -506,7 +506,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         margin-right: auto;
       }
       .mb-16 {
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
       }
       .mb-2 {
         margin-bottom: 0.5rem;
@@ -818,7 +818,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         text-align: center;
       }
       .text-5xl {
-        font-size: 3rem;
+        font-size: 2.6rem;
         line-height: 1;
       }
       .text-lg {
@@ -1402,7 +1402,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
       @media (min-width: 1024px) {
         .lg\:text-8xl {
           font-size: 6rem;
-          line-height: 1;
+          line-height: 1.2;
         }
       }
 @font-face {
