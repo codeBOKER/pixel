@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pixel-site.vercel.app/</loc>
+    <loc>https://pixel23.xyz/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pixel-site.vercel.app/graphic.html</loc>
+    <loc>https://pixel23.xyz/graphic.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pixel-site.vercel.app/motion.html</loc>
+    <loc>https://pixel23.xyz/motion.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pixel-site.vercel.app/conference.html</loc>
+    <loc>https://pixel23.xyz/conference.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pixel-site.vercel.app/web.html</loc>
+    <loc>https://pixel23.xyz/web.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pixel-site.vercel.app/soon.html</loc>
+    <loc>https://pixel23.xyz/soon.html</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
